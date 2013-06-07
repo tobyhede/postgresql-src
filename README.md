@@ -1,4 +1,4 @@
-# development cookbook
+# postgresql-src
 
 # Requirements
 

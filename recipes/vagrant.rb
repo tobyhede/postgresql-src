@@ -7,5 +7,5 @@ sudo "vagrant" do
   user      "vagrant"
   nopasswd  true
 
-  only_if node[:postgresql_src][:vagrant]
+  # only_if { node[:postgresql_src][:vagrant] }
 end

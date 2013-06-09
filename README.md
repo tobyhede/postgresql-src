@@ -5,9 +5,15 @@ Installs/Configures postgresql from src on Ubuntu
 Currently assumes Vagrant, you probably don't want this in production at the moment.
 
 
-## Requirements
-
 ## Usage
+
+Include the default recipe.
+
+```
+include_recipe "postgresql-src::default"
+```
+
+
 
 ## Attributes
 
@@ -29,7 +35,6 @@ node.set[:postgresql_src][:connections] = {"10.0.0.0/16" => "trust"}
 node.set[:postgresql_src][:replication] = {}
 
 node.set[:postgresql_src][:conf]        = {listen_addresses: "*"}
-
 
 node.set[:postgresql_src][:vagrant]     = true
 
